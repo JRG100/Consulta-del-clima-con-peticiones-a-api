@@ -1,0 +1,62 @@
+html {
+    font-size: 62.5%;
+    background: #35a8dd;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f07808fd, #35a8dd);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f07808fd, #35a8dd ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1, h2, h3{
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+      font-size: 5rem;
+  }
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+  background: #35a8dd;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f07808fd, #35a8dd);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f07808fd, #35a8dd ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.username-field {
+  font-size: 1.6rem;
+}
+
+
+.sk-fading-circle {
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+  
+  .sk-fading-circle .sk-circle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .sk-fading-circle .sk-circle:before {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    height: 15%;
+    background-color: white;
+    border-radius: 100%;
+    -webkit-animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+            animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+  }
+ 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima - JavaScript Moderno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css"> 
+    
+   
+</head>
+<body>
+
+    <div class="container py-5 ">
+        <h1 id="titulo" class="text-center text-white">Busca el <span class="text-primary"> clima</span></h1>
+        <div class="container-xl ">
+
+            <div class="py-5 text-center">
+                <div id="resultado">
+                    <p class="text-center text-white">Introduce tu ciudad y país, el resultado se mostrará aquí</p>
+                </div>
+            </div>
+            
+            <div class="row d-flex justify-content-center py-5">
+                <div class="col-md-6">
+            <form id="formulario" action="#" method="POST">                
+                    
+                    <input 
+                        type="text" 
+                        name="ciudad"
+                        id="ciudad"
+                        placeholder="Escribe tu ciudad"
+                        class="form-control p-3 username-field input-lg  "
+                    />                
+                
+                <div class="mt-5">
+                    <select 
+                        class="form-control p-3 username-field input-lg" 
+                        id="pais"
+                    >
+                        <option disabled selected value="">-- Seleccione --</option>
+                        <option value="ES">España</option>
+                        <option value="FR">Francia</option>
+                        <option value="DE">Alemania</option>                     
+                        <option value="US">Estados Unidos</option>
+                        <option value="MX">México</option>
+                        <option value="PE">Perú</option>
+                    </select>
+                </div>
+
+                <input 
+                    type="submit"
+                    class="form-control btn btn-primary mt-5 p-3 username-field input-lg "
+                    value="Obtener clima"
+                />
+
+            </form>
+            </div>
+            </div>
+     
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
